@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>BRAIN FIRE - Registrarse</title>
     <link rel="stylesheet" href="style-inicio.css">
     <link rel="icon" type="image/png" href="recursos/icono.png">
@@ -26,26 +27,32 @@
     </header>
 
     <br><br><br>
-    <form class="formu-inicio">
+    <form class="formu-inicio" action="registrar.php" method="POST">
         <h2>REGISTRARSE</h2><br>
+        
         <label>Nombre de usuario</label>
         <br>
-        <input type="text" placeholder="Introduce tu nombre..." />
+        <input type="text" name="username" placeholder="Introduce tu nombre..." required />
         <br><br>
+        
         <label>Correo Electronico</label>
         <br>
-        <input type="email" placeholder="Introduce tu correo electronico..." />
+        <input type="email" name="email" placeholder="Introduce tu correo electronico..." required />
         <br><br>
+        
         <label>Contraseña</label>
         <br>
-        <input type="password" placeholder="Introducir contraseña..." />
+        <input type="password" name="password" placeholder="Introducir contraseña..." required />
         <br><br>
+        
         <label>Confirmar contraseña</label>
         <br>
-        <input type="password" placeholder="Introducir contraseña..." />
+        <input type="password" name="confirm_password" placeholder="Introducir contraseña..." required />
         <br><br>
-        <a href="semestres.html"><button type="button" class="btn-ingresar">Registrar</button></a>
+        
+        <button type="submit" class="btn-ingresar">Registrar</button>
         <br><br>
+        
         <label>¿Ya tienes cuenta con nosotros? <a href="index.html">Inicia sesion aqui</a></label>
     </form>
 </body>

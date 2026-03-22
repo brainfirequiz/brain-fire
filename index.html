@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>BRAIN FIRE</title>
     <link rel="stylesheet" href="style-inicio.css">
     <link rel="icon" type="image/png" href="recursos/icono.png">
@@ -26,21 +27,25 @@
     </header>
     <br><br><br><br>
 
-    <form class="formu-inicio">
+    <form class="formu-inicio" action="login.php" method="POST">
         <h2>INICIAR SESION</h2><br>
         
         <label>Correo Electronico</label>
         <br>
-        <input type="email" placeholder="Introduce tu correo electronico..." />
+        <input type="email" name="email" placeholder="Introduce tu correo electronico..." required />
         <br><br>
+        
         <label>Contraseña</label>
         <br>
-        <input type="password" placeholder="Introducir contraseña..." />
+        <input type="password" name="password" placeholder="Introducir contraseña..." required />
         <br><br>
+        
         <label style="color: #686868;">¿Olvidaste tu contraseña? <a target="_blank" href="https://mail.google.com/mail/u/4/?ogbl#search/brainfire.quiz%40gmail.com">Haz click aqui</a></label>
         <br><br>
-        <a href="semestres.html"><button type="button" class="btn-ingresar">Iniciar Sesion</button></a>
+        
+        <button type="submit" class="btn-ingresar">Iniciar Sesion</button>
         <br><br>
+        
         <label>¿No tienes cuenta con nosotros? <a href="registro.html">Registrate aqui</a></label>
     </form>
 </body>
